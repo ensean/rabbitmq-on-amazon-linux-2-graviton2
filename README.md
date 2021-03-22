@@ -24,7 +24,7 @@ rabbitmq:3-management
 ```shell
 yum install ncurses-compat-libs -y # erlang lib dep
 yum install socat -y
-yum install docker -y #通过docker方式编译
+yum install docker -y # build rpm by with docker
 ```
 
 
@@ -40,7 +40,7 @@ rpm -ivh ./build/build-dir-7/RPMS/aarch64/erlang-23.2.7-1.el7.aarch64.rpm
 ```
 
 
-3. 下载安装rabbitmq-server
+3. download and install rabbitmq-server
 ```
 wget https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.8.6/rabbitmq-server-3.8.6-1.el7.noarch.rpm
 rpm -ivh rabbitmq-server-3.8.6-1.el7.noarch.rpm
