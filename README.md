@@ -25,6 +25,7 @@ rabbitmq:3-management
 yum install ncurses-compat-libs -y # erlang lib dep
 yum install socat -y
 yum install docker -y # build rpm by with docker
+sudo service start docker # start docker daemon
 ```
 
 
@@ -36,7 +37,7 @@ cd docker
 ./build-image-and-rpm.sh 7 --no-cache
 
 # install erlang
-rpm -ivh ./build/build-dir-7/RPMS/aarch64/erlang-23.2.7-1.el7.aarch64.rpm
+rpm -ivh ./build-dir-7/RPMS/aarch64/erlang-23.2.7-1.el7.aarch64.rpm
 ```
 
 
